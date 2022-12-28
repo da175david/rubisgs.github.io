@@ -1,0 +1,337 @@
+body {
+  background-color: #843beb;
+  font-family: 'Satisfy', cursive;
+}
+#particles-js {
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.snap-conteiner {
+    display: flexbox;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    z-index: 90;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    min-width: 250px;
+}
+.snap-section {
+  text-align: center;
+  padding: 0px 0px 0 0px;
+  scroll-snap-align: start;
+  min-height: 100vh;
+  min-width: 50%;
+
+}
+.Father {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 0vh;
+    background-color: rgba(0, 0, 0, 0.314);
+}
+h1 {
+    font-size: 300%;
+    color:#ffffff;
+}
+.multi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 92px;
+    padding: 5px;
+    grid-gap: 10px;
+    position: relative;
+    z-index: 90;
+}
+.imagen-multi {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s; /* animation */
+ }
+img:hover {
+  transform: scale(.98);
+}
+/*----IMAGENES SEPARADAS----*/
+.conteiner_img:nth-child(1) {
+  grid-row-start: span 3;
+}
+.conteiner_img:nth-child(2) {
+  grid-row-start: span 1;
+  grid-row-start: span 2;
+}
+.conteiner_img:nth-child(3) {
+  grid-column-start: span 2;
+  grid-row-start: span 1;
+}
+.conteiner_img:nth-child(4) {
+  grid-row-start: span 2;
+}
+.conteiner_img:nth-child(5) {
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+}
+.conteiner_img:nth-child(6) {
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+}
+.conteiner_img:nth-child(7) {
+  grid-column-start: span 1;
+  grid-row-start: span 3;
+}
+.conteiner_img:nth-child(8) {
+  grid-column-start: span 1;
+  grid-row-start: span 3;
+}
+.conteiner_img:nth-child(9) {
+  grid-column-start: span 1;
+  grid-row-start: span 3;
+}
+.conteiner_img:nth-child(10) {
+    grid-column-start: span 1;
+    grid-row-start: span 3;
+  }
+.conteiner_img:nth-child(11) {
+    grid-column-start: span 1;
+    grid-row-start: span 2;
+  }
+.conteiner_img:nth-child(12) {
+    grid-column-start: span 1;
+    grid-row-start: span 3;
+  }
+.conteiner_img:nth-child(13) {
+    grid-column-start: span 1;
+    grid-row-start: span 3;
+  }
+.conteiner_img:nth-child(14) {
+    grid-column-start: span 1;
+    grid-row-start: span 3;
+  }
+.conteiner_img:nth-child(15) {
+    grid-column-start: span 1;
+    grid-row-start: span 2;
+  }
+
+  .txt {
+    display: grid;
+    grid-auto-rows: 60vh;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    z-index: 99;
+  }
+  h2 {
+    font-family: 'Lobster Two', cursive;
+    font-size: calc(1em + 1vw);
+    text-align: justify;
+    color: white;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    margin-left: 10%;
+    margin-top: 10%;
+    background-color: rgba(0, 0, 0, 0.505);
+  }
+  .box-frase {
+    display: flex;
+  width: 100%;
+  justify-content: center;
+  }
+  .box-frase .frase{
+    width: 60%;
+    height: auto;
+    margin-top: 15em;
+    max-width: 750px;
+  }
+  .razones {
+    display: grid;
+    margin-top: 15%;
+  }
+  .razones h4 p{
+    margin:1.2 ;
+    font-size: calc(.5em + .5vw);
+  }
+  .razones h4 p a{
+    text-decoration: none;
+
+  }
+/* carousel */
+/* tipos de textos por poner
+'Amatic SC', cursive, bold;
+'Hepta Slab', serif;
+*/
+/*
+.subtitulo {
+  font-size: 5vh;
+  font-family:'Zilla Slab Highlight', cursive;
+  text-align: center;
+  color: #ffffff;
+}
+.info {
+  font-size: 20px;
+  font-family: 'Coming Soon', bold;
+  text-align: center;
+  color: #ffffff;
+}
+.carousel {
+  min-height: 700px;
+  justify-content: center;
+  position: relative;
+  z-index: 99;
+}
+.carousel .carousel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content:end;
+  align-items: flex-end;
+  user-select: none;
+  width: 700px;
+  height: 500px;
+  padding-right: 15px;
+}
+.carousel .carousel-item .img-carousel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+}
+.box-frase {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 15vh;
+  position: relative;
+  z-index: 99;
+}
+.frase {
+  padding-top: 10vh;
+
+  width: 100%;
+  height: 100%;
+  padding-left: 30vh;
+}
+.gobutton {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 99;
+}
+.button {
+  width: 0rem;
+  height: 0rem;
+  background-color: rgba(0, 0, 0, 0.408);
+  border-radius: 50%;
+  cursor:pointer;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+}
+.button i {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+
+  color: #ffffff;
+  scroll-padding-top: 0;
+} */
+.navbar {
+  font-size: 3vh;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffffff;
+  padding-left: 2vh;
+  padding-top: 5vh;
+  text-decoration: none;
+  position: fixed;
+}
+.razones h4 {
+  font-size: 2.5vh;
+  font-family: 'Coming Soon', bold;
+  text-align: center;
+  color: #ffffff;
+}
+.rubis {
+  display: grid;
+  font-size: calc(1em + .5vw);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align:left;
+  color: #ffffff;
+  background-color: rgba(146, 79, 255, 0.805);
+  border-radius: 5px;
+  width:fit-content;
+}
+.david {
+  display: grid;
+  font-size: calc(1em + .5vw);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffffff;
+  background-color: rgba(255, 83, 83, 0.844);
+  border-radius: 5px;
+  width:fit-content;
+  margin-left: 5vh;
+}
+.razones-d {
+  display: grid;
+  font-size: 2.5vh;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffffff;
+  background-color: rgba(255, 83, 83, 0.844);
+  border-radius: 5px;
+  width:fit-content;
+  margin-left: 5vh;
+}
+.Father-conver {
+  display: flexbox;
+  height: 1850vh;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 0vh;
+  background-color: rgba(0, 0, 0, 0.74);
+  justify-items: end;
+}
+.conver {
+  padding-left: 5vh;
+  padding-top: 5vh;
+  padding-right: 5vh;
+}
+.conver .david .sticker {
+  width: 180px;
+  height: 180px;
+}
+.conver .rubis .sticker {
+  width: 180px;
+  height: 180px;
+}
+/*.carousel .indicators .indicator-item {
+
+}*/
+/*En este codigo o parte que solo se puede visualizar en estos programas,
+creo necesario expresar todo lo que no dije dentro de la nota de la pagina,
+Rubí, sea el dia que sea, quiero decirte que me gustas o gustaste o sigues
+gustando, eres esa persona que me dio una nueva perspectiva positiva
+y que sin duda alguna, me abriste los ojos, e igual forma, tu belleza
+exterior me hizo poder ver lo tan linda que eres, tu belleza interior me
+encanta como no tienes idea, pero tampoco quiero que nuestra amistad
+se rompa por sentir esto por ti, realmente desde que te dije la confesion,
+me atraias un poco pero con el paso del tiempo, y las circunstancias
+han dado a ver que me gustas, esto lo escribo el dia 25 de diciembre
+de 2022, no se cuando lo veas, pero te quiero mucho, y si se logra o logro
+dar esto que de pensarlo me da una sonrisa, podre mostrartelo, pero si
+no es asi, hasta estas lineas lo has visto, y gracias por todo, por
+el cariño que me has dado, el escucharme, guiarme por lo bueno, eso lo
+aprecio demasiado, te quiero mucho, no lo niego, me gusta ver tu sonrisa,
+tus ojitos tan hermosos, tus labios que quisiese probar y poder abrazarte
+y estar a tu lado por lo que reste...*/
