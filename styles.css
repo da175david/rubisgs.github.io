@@ -265,7 +265,7 @@ img:hover {
 }
 .rubis {
   display: grid;
-  font-size: calc(1em + .5vw);
+  font-size: calc(1em + .1vw);
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align:left;
   color: #ffffff;
@@ -275,7 +275,7 @@ img:hover {
 }
 .david {
   display: grid;
-  font-size: calc(1em + .5vw);
+  font-size: calc(1em + .1vw);
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #ffffff;
   background-color: rgba(255, 83, 83, 0.844);
@@ -285,7 +285,7 @@ img:hover {
 }
 .razones-d {
   display: grid;
-  font-size: 2.5vh;
+  font-size: calc(1em + .1vw);
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #ffffff;
   background-color: rgba(255, 83, 83, 0.844);
@@ -295,17 +295,17 @@ img:hover {
 }
 .Father-conver {
   display: flexbox;
-  height: 1850vh;
+  height: 100%;
   width: 70%;
   margin-left: 15%;
   margin-bottom: 0vh;
-  background-color: rgba(0, 0, 0, 0.74);
-  justify-items: end;
 }
 .conver {
   padding-left: 5vh;
   padding-top: 5vh;
   padding-right: 5vh;
+  padding-bottom: 5vh;
+  background-color: rgba(0, 0, 0, 0.74);
 }
 .conver .david .sticker {
   width: 80%;
